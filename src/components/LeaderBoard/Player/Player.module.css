@@ -1,0 +1,9 @@
+.PlayerItem{
+    background-color: #cfd8dc;
+    color: #a1aaad;
+    font-weight: bold;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    margin:3px 0;
+}

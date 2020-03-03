@@ -1,0 +1,23 @@
+
+.Field{
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    transition: .3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.Active{
+    background-color: #42d8e8;
+    border: 1px solid #42d8e8;
+    cursor: pointer;
+}
+
+.Player{
+    border: 1px solid #00e871;
+    background-color: #00e871;
+}
+.AI{
+    border: 1px solid #e85a5f;
+    background-color: #e85a5f;
+}

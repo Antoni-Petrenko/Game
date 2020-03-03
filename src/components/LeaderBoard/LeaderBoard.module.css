@@ -1,0 +1,14 @@
+.LeaderBoard{
+    flex-grow: 1;
+    border: 2px solid gray;
+    padding: 150px 50px 0 50px!important;
+}
+
+.LeaderBoard>h2{
+    color: #7b8d93;
+}
+.LeaderBoard>ul{
+    margin-top: 30px;
+    height: 370px;
+    overflow-y: scroll;
+}

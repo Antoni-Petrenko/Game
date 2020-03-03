@@ -1,0 +1,42 @@
+.Form{
+  width: 100%;
+  text-align: center;
+}
+
+.Select{
+    border: none;
+    padding: 10px;
+    border-radius:5px;
+    background-color:#cfd8dc;
+    color: #7b8d93;
+}
+.Select:focus{
+    outline: none;
+}
+.Input{
+    border: none;
+    padding: 10px;
+    border-radius:5px;
+    background-color: #f3f3f3;
+    margin: 0 10px;
+}
+.Input:focus{
+    outline: none;
+}
+
+.Button{
+    border: none;
+    padding: 10px ;
+    min-width: 100px;
+    border-radius:5px;
+    background-color: #7b8d93;
+    color: white;
+    text-transform: uppercase;
+    transition: .3s;
+    cursor: pointer;
+}
+.Button:disabled{
+    background-color: #f3f3f3;
+    color: #cfd8dc;
+    cursor: not-allowed;
+}
