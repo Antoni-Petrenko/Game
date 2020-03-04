@@ -27,9 +27,6 @@ export const getLeaderBoardFailure = () => ({
   payload: "Check your internet connection"
 });
 
-export const postGameResult=()=>({
-  type: types.CONNECTION_ERROR
-}) 
 export const postGameResultFailure=()=>({
     type: types.CONNECTION_ERROR,
     payload: "Check your internet connection"

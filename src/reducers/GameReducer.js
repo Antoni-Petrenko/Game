@@ -21,9 +21,9 @@ export default function Game(state = defaultState.GameDefaultState, action) {
 
     case types.START_GAME: {
       if (!state.isFirstGame) {
-        const resetField = state.field.map(field => {
-          field.whoseField = "none";
-          return field;
+        const resetField = state.field.map(cell => {
+          cell.whoseField = "none";
+          return cell;
         });
         return {
           ...state,
