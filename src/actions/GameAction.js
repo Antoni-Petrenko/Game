@@ -1,7 +1,7 @@
 import {
   makeChoice,
   finishGame,
-  generateField,
+  generateCell,
   checkWiner
 } from "./ActionsCreators";
 import { postGameResult } from "./AppAsyncActions";
@@ -15,7 +15,7 @@ export const choice = (fieldID, whoClicked) => {
       dispatch(finishGame());
       dispatch(postGameResult());
     } else {
-      dispatch(generateField());
+      dispatch(generateCell());
     }
   };
 };

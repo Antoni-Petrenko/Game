@@ -4,7 +4,7 @@ import {
   startGame,
   drawGameField,
   savePlayerName,
-  generateField
+  generateCell
 } from "../../../actions/ActionsCreators";
 import * as styles from "./PlayerSetup.module.css";
 
@@ -17,7 +17,7 @@ const PlayerSetup = () => {
 
   useEffect(() => {
     if (gameIsOn) {
-      dispatch(generateField());
+      dispatch(generateCell());
     }
   }, [gameIsOn, dispatch]);
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Field } from "./Field/Field";
+import { Cell } from "./Cell/Cell";
 import * as styles from "./GameField.module.css";
 
 const GameField = () => {
@@ -16,8 +16,8 @@ const GameField = () => {
     <div className={styles.GameField} style={style}>
       {Array(fields)
         .fill(0)
-        .map((field, index) => (
-          <Field key={index} id={index} />
+        .map((cell, index) => (
+          <Cell key={index} id={index} />
         ))}
     </div>
   );

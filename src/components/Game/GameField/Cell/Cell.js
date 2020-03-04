@@ -1,9 +1,9 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { choice } from "../../../../actions/GameAction";
-import * as styles from "./Field.module.css";
+import * as styles from "./Cell.module.css";
 
-const Field = ({ id }) => {
+const Cell = ({ id }) => {
   const delay = useSelector(state => state.Game.delay);
   const isActive = useSelector(state => state.Game.field[id].isActive);
   const whoseField = useSelector(state => state.Game.field[id].whoseField);
@@ -36,4 +36,4 @@ const Field = ({ id }) => {
   return <div className={className.join(" ")} onClick={handlerClick}></div>;
 };
 
-export { Field };
+export { Cell };

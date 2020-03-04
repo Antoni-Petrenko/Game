@@ -4,13 +4,13 @@ export const AppDefaultState = {
   defaultSettings: { delay: 2000, field: 5 },
   winner: "",
   liaderBoard: [],
-  message: "Test message"
+  message: ""
 };
 
 export const GameDefaultState = {
   AIPoints: 0,
   PlayerPoints: 0,
-  filledFields: [],
+  filledCells: [],
   field: [],
   delay: 0,
   gameIsOn: false,

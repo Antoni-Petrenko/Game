@@ -44,14 +44,14 @@ export const drawGameField = settings => ({
   payload: settings
 });
 
-export const generateField = () => ({
-  type: types.GENERATE_RANDOM_FIELD
+export const generateCell = () => ({
+  type: types.GENERATE_RANDOM_CELL
 });
 
-export const makeChoice =(fieldID, whoClicked)=> ({
+export const makeChoice =(cellID, whoClicked)=> ({
   type: types.MAKE_CHOICE,
   payload: {
-    fieldID, whoClicked
+    cellID, whoClicked
   }
 });
 
